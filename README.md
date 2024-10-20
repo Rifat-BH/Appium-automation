@@ -93,11 +93,11 @@ Download and install Oracle JDK version 22.0.2.
 Check the installation path of the JDK: 
 ls /usr/lib/jvm/
 ### Step 3: Edit Environment Variables
-Open the .  rc file:
-nano ~/.  rc
+Open the .bashrc file:
+nano ~/.bashrc
 
 ### Step 4: Set JAVA_HOME
-Add or modify the JAVA_HOME variable in .  rc:
+Add or modify the JAVA_HOME variable in .bashrc:
 export JAVA_HOME=/usr/lib/jvm/jdk-22.0.2-oracle-x64
 export PATH=$PATH:$JAVA_HOME/bin
 
@@ -105,8 +105,8 @@ export PATH=$PATH:$JAVA_HOME/bin
 Save changes in nano: (CTRL + X, then Y, then Enter).
 
 ### Step 6: Reload Configuration
-Reload the .  rc file to apply changes:
-source ~/.  rc
+Reload the .bashrc file to apply changes:
+source ~/.bashrc
 
 ### Step 7: Verify Java Installation
 Check that JAVA_HOME is correctly set:
@@ -122,8 +122,8 @@ Follow the installation instructions to complete the setup.
 ## Setting Up ANDROID_HOME in Ubuntu
 Find SDK path from: Welcome Screen -> More Actions -> SDK Manager.
 Open Terminal: Press Ctrl + Alt + T to open a terminal.
-### Edit the .  rc file:
-nano ~/.  rc
+### Edit the .bashrc file:
+nano ~/.bashrc
 
 ### Add Environment Variables: Scroll to the bottom and add the following lines: 
 export ANDROID_HOME=/home/<your_username>/Android/Sdk
@@ -132,7 +132,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 Save and Exit: Press CTRL + X, then Y, and hit Enter.
 
 ### Apply Changes:
-source ~/.  rc
+source ~/.bashrc
 
 ### Verify ANDROID_HOME:
 echo $ANDROID_HOME
